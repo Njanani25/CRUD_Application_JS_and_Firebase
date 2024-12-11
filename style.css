@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h3 {
+    color: tomato;
+    font-weight: 600;
+    margin: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+form {
+    width: 320px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form .form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+form .form-group label {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #555;
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+}
+
+form .form-group input {
+    width: 100%; /* Ensures consistent width for all inputs */
+    max-width: 220px; /* Optional: Restricts the maximum width */
+    font-size: 16px;
+    padding: 8px 10px; /* Even padding for visual consistency */
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+form .form-group label {
+    flex-shrink: 0; /* Prevents the label from shrinking */
+    width: 100px; /* Ensures all labels have a consistent width */
+    text-align: right; /* Aligns label text to the right */
+}
+
+
+form .form-group input:focus {
+    border-color: teal;
+    background-color: #fff;
+}
+
+form button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    background-color: tomato;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+form button:hover {
+    background-color: #e63946;
+}
+
+table {
+    border: 1px solid teal;
+    border-collapse: collapse;
+    min-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table thead tr {
+    background-color: teal;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+table thead tr th {
+    border-color: teal;
+    font-weight: 400;
+    padding: 10px;
+}
+
+table td,
+table th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+table tbody tr:hover {
+    background-color: #f1f9f9;
+    transition: background-color 0.3s ease;
+}
+
+table td button {
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 12px;
+    margin: 0 auto;
+    background-color: teal;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+table td button:hover {
+    background-color: #006666;
+}
+
+.btn-delete {
+    background-color: red;
+}
+
+.btn-delete:hover {
+    background-color: #cc0000;
+}
